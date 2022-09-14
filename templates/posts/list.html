@@ -7,7 +7,7 @@
 <h6>Current date and time: {{ current_datetime }}</h6>
 <ul>
     {% for post in post_list %} 
-    <li><a href="{% url 'post_detail' post.id %}">{{ post.title }} - {{ post.created_on }}</a></li>
+    <li><a href="{% url 'post_detail' %}">{{ post.title }} - {{ post.created_on }}</a></li>
     {% endfor %}
 </ul>
 {% endblock content %} 
